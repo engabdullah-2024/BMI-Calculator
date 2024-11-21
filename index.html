@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>BMI Calculator</h1>
+        
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Enter your age">
+        
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" placeholder="Enter your height in cm">
+        
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="Enter your weight in kg">
+        
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        
+        <div id="result" style="display: none;">
+            <p>BMI: <span id="bmi"></span></p>
+            <p id="status"></p>
+        </div>
+
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
